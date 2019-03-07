@@ -2,7 +2,8 @@ FROM jboss/keycloak:4.8.2.Final
 
 ADD docker-entrypoint.sh /opt/jboss/
 
-EXPOSE 8080
+EXPOSE 8180
+EXPOSE 10090
 
 ENTRYPOINT [ "/opt/jboss/docker-entrypoint.sh" ]
 
